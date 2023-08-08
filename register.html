@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encore</title>
+  <link rel="icon" type="image/x-icon" href="img/icon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .event-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .event-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 1rem;
+      width: 250px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .event-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .event-image {
+      width: 100%;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      max-width: 800px;
+    }
+
+    .seat-matrix {
+      display: grid;
+      grid-template-columns: repeat(30, 15px); /* Increase columns to fit more seats */
+      gap: 3px;
+    }
+
+    .seat-section {
+      display: grid;
+      grid-template-columns: repeat(30, 15px); /* Increase columns to fit more seats */
+      gap: 3px;
+    }
+
+    .seat {
+      background-color: #ddd;
+      color: #333;
+      font-weight: bold;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      width: 15px; /* Reduce seat size */
+      height: 15px; /* Reduce seat size */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .seat.selected {
+      background-color: #6ab04c;
+      color: #fff;
+      border-color: #6ab04c;
+    }
+
+    .seat-icon {
+      width: 10px; /* Reduce icon size */
+      height: 10px; /* Reduce icon size */
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #333;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .modal-close:hover {
+      color: #ff0000;
+    }
+
+    .open-form-btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .open-form-btn {
+      background-color: #4285f4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .open-form-btn:hover {
+      background-color: #3367d6;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/encore-logo.png" alt="Encore: Technology Dramatics Society" style="width: 20%;">
+  </header>
+
+  <main>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-tDH6X6EaNSkoPNjghiyRxPsqTKw3iP32QE8YvgXLtu6ajQ/viewform?embedded=true" width="75%" height="720" frameborder="0" marginheight="0" marginwidth="0" style="margin: auto; display: block;">Loading…</iframe>
+  </main>
+
+
+</body>
+</html>
